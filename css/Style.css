@@ -25,6 +25,8 @@ html,body{
   --frank-ruhl: 'Frank-Ruhl-Libre', cursive;
   --mulish: 'Mulish', cursive;
   --anton: 'Anton', cursive;
+  --tangerine: 'Tangerine', cursive;
+  --pecifico: 'Pacifico', cursive;
 }
 
 /* -------------- Variables ----------------- */
@@ -44,6 +46,14 @@ html,body{
 
 .justify-center{
   justify-content: center;
+}
+
+.pecifico{
+  font-family: var(--pecifico);
+}
+
+.tangerine{
+  font-family: var(--tangerine);
 }
 
 .gray{
@@ -84,22 +94,17 @@ html,body{
 }
 
 h1{
-  font-family: var(--anton);
-  font-size: 5rem;
-  letter-spacing: 0.8rem;
   margin: 0px;
   padding-bottom: 1.5rem;
 }
 
 h2{
   font-family: var(--fjalla);
-  font-size: 2rem;
   letter-spacing: 0.3rem;
 }
 
 h3{
   font-family: fantasy;
-  font-size: 2rem;
   font-weight: lighter;
   letter-spacing: 0.1rem;
   margin: 1rem 0rem;
@@ -146,51 +151,47 @@ nav .nav-bar{
 }
 
 nav .nav-bar .nav-brand{
-  padding: 1.5rem 0 ;
+  padding: 1rem 0 ;
 }
 
 nav .nav-bar .nav-brand a{
-  font-family: var(--fjalla);
-  font-size: 2rem;
+  font-weight: bold;
+  font-size: 1.8rem;
   letter-spacing: 0.3rem;
   color: var(--red);
   display: block;
 }
 
-nav .nav-items{
-  display: flex;
-  padding: 0rem 1rem;
+nav .search-bar{
+  border: 1px solid var(--red);
+  border-radius: 2rem;
+  margin: 1.5rem;
+  width: 18rem;
 }
 
-nav .nav-items .nav-links{
-  margin: 0rem;
-  font-family: var(--cairo);
+.search-bar input{
+  border: none;
+  outline: none;
+  float: left;
+  margin-left: 1.1rem;
+  padding: 0;
+  font-size: 1rem;
+  transition: 0.4s;
+  line-height: 40px;
+}
+
+.search-bar a{
+  color: var(--red);
+  padding: 0;
+  line-height: 40px;
+  float: right;
+  padding-right: 1rem;
   font-size: 1.2rem;
-  padding: 0.9rem 0.8rem;
-  color: black;
-  position: relative;
+  opacity: 80%;
 }
 
-nav .nav-items .nav-links a{
-  color: #000;
-}
-
-nav .nav-items .nav-links a:hover{
-  color: var(--red);
-  transition: 0.3s;
-}
-
-.social-items{
-  padding: 2.3rem 0;
-}
-
-.social-items a{
-  padding: 0 0.2rem;
-}
-
-.social-items i:hover{
-  color: var(--red);
-  transition: 0.3s;
+.search-bar a:hover{
+  opacity: 100%;
 }
 
 /* ---------- toggle Collapse ---------- */
