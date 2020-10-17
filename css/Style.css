@@ -1,0 +1,571 @@
+@import url('../css/fonts.css');
+
+html,body{
+  margin: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* -------------- Variables ----------------- */
+
+:root{
+
+  --parrot: #4ce6ba;
+  --dark-parrot: #183d33;
+  --orange: #e69915;
+  --light-gray: #707070;
+  --red: #d10a43;
+  --gray: #3b3a3a;
+  --text-gray: #3f4954;
+  --yellow: #fcfc00;
+
+  --archivo: 'Archivo', monospace;
+  --cairo: 'Cairo', cursive;
+  --fjalla: 'Fjalla-One', cursive;
+  --frank-ruhl: 'Frank-Ruhl-Libre', cursive;
+  --mulish: 'Mulish', cursive;
+  --anton: 'Anton', cursive;
+}
+
+/* -------------- Variables ----------------- */
+
+/* ------------- Global Classes ------------- */
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.gray{
+  color: var(--gray);
+}
+
+.text-gray{
+  color: var(--text-gray);
+}
+
+.light-gray{
+  color: var(--light-gray);
+}
+
+.btn{
+  border: 0rem;
+  background: transparent;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  font-family: var(--cairo);
+}
+
+.btn:hover{
+  color: var(--red);
+}
+
+.social-items{
+  padding: 2.3rem 0;
+}
+
+.social-items a{
+  padding: 0 0.2rem;
+}
+
+.social-items i:hover{
+  color: var(--red);
+  transition: 0.3s;
+}
+
+h1{
+  font-family: var(--anton);
+  font-size: 5rem;
+  letter-spacing: 0.8rem;
+  margin: 0px;
+  padding-bottom: 1.5rem;
+}
+
+h2{
+  font-family: var(--fjalla);
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+h3{
+  font-family: fantasy;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0rem;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1.1rem;
+  color: white;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#font1-2{
+  font-size: 1.2rem;
+}
+
+/* ------x------ Global Classes ------x------ */
+
+/* ----------------- Nav Bar ----------------- */
+
+nav{
+  background-color: white;
+  padding: 0 3rem;
+  height: 0rem;
+  min-height: 10vh;
+  margin: 0rem 15rem 0rem 12rem;
+  overflow: hidden;
+}
+
+nav .nav-bar{
+  justify-content: space-between;
+}
+
+nav .nav-bar .nav-brand{
+  padding: 1.5rem 0 ;
+}
+
+nav .nav-bar .nav-brand a{
+  font-family: var(--fjalla);
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  color: var(--red);
+  display: block;
+}
+
+nav .nav-items{
+  display: flex;
+  padding: 0rem 1rem;
+}
+
+nav .nav-items .nav-links{
+  margin: 0rem;
+  font-family: var(--cairo);
+  font-size: 1.2rem;
+  padding: 0.9rem 0.8rem;
+  color: black;
+  position: relative;
+}
+
+nav .nav-items .nav-links a{
+  color: #000;
+}
+
+nav .nav-items .nav-links a:hover{
+  color: var(--red);
+  transition: 0.3s;
+}
+
+.social-items{
+  padding: 2.3rem 0;
+}
+
+.social-items a{
+  padding: 0 0.2rem;
+}
+
+.social-items i:hover{
+  color: var(--red);
+  transition: 0.3s;
+}
+
+/* ---------- toggle Collapse ---------- */
+nav .toggle-collapse{
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+nav .toggle-collapse .toggle-icon{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.8rem 0;
+}
+
+nav .toggle-collapse .toggle-icon i{
+  font-size: 1.7rem;
+  color: var(--text-gray);
+}
+
+/* -----x---- toggle Collapse ----x----- */
+
+/* --------x-------- Nav Bar --------x-------- */
+
+/* --------------------- Main Section ------------------- */
+
+/* ---------------- Home Title Page -------------- */
+
+main{
+  background: url('../assets/cover-photo.jpg') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .home-section{
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .home-section .home-title{
+  padding-top: 10rem;
+}
+
+main .home-section .home-title span{
+  font-family: var(--mulish);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
+}
+
+
+/* -------x------- Home Title Page -------x---------*/
+
+/* -------------------- Project Section ---------------- */
+
+main .project-section{
+  margin: 5rem 0rem;
+  padding: 1rem 15rem;
+  /* background-color: var(--light-gray); */
+}
+
+
+main .project-section h3{
+  display: flex;
+  justify-content: center;
+}
+
+main .project-section .project-category{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main .project-section .project-category .btn{
+  margin: 0rem 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+main .project-section .container ul{
+  display: flex;
+  justify-content: center;
+}
+
+main .project-section .container li{
+  max-width: 30%;
+  height: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+main .project-section .container .project-name p{
+  color: var(--yellow);
+}
+
+main .project-section .container .project-name{
+  position: absolute;
+  top: 0%;
+  margin-left: 5%;
+}
+
+main .project-section .container .project-lang{
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  color: white;
+}
+
+/* --------- Overlay ---------*/
+
+main .project-section .container .overlay{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(63, 73, 84, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+main .overlay-container{
+  position: relative;
+  width: 100%;
+}
+
+main .overlay-container:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+main .overlay-container:hover  .project-name{
+  display: none;
+}
+
+main .overlay-container:hover  .project-lang{
+  display: none;
+}
+
+main .container .text{
+  color: var(--parrot);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* ----x---- Overlay ----x----*/
+
+/* ---------x---------- Project Section --------x------- */
+
+/* -------------------- Blog Section ---------------- */
+
+main .blog-section{
+  height: auto;
+  margin-top: 5rem;
+  padding: 1rem 15rem;
+  padding-bottom: 5rem;
+  /* background-color: var(--light-gray); */
+}
+
+main .blog-section h3{
+  display: flex;
+  justify-content: center;
+}
+
+main .blog-section .blog-category{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main .blog-section .blog-category .btn{
+  margin: 0rem 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+main .blog-section .container ul{
+  display: flex;
+  justify-content: center;
+}
+
+main .blog-section .container li{
+  max-width: 30%;
+  height: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+main .blog-section .container .blog-name p{
+  color: var(--yellow);
+}
+
+main .blog-section .container .blog-name{
+  position: absolute;
+  top: 0%;
+  margin-left: 5%;
+}
+
+main .blog-section .container .blog-lang{
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  color: white;
+}
+
+main .blog-section .container .overlay{
+  overflow: hidden;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  background-color: var(--text-gray);
+  opacity: 0;
+  transition: 0.7s ease;
+}
+
+main .blog-section .overlay-container:hover .overlay{
+  opacity: 0.8;
+}
+
+main .blog-section .overlay-container:hover .blog-name{
+  display: none;
+}
+
+main .blog-section .overlay-container:hover .blog-lang{
+  display: none;
+}
+/* --------x------- Blog Section -----x------- */
+
+/* ---------x---------- Main Section --------x---------- */
+
+/* ----------------------- Footer ---------------------- */
+
+footer{
+  width: 100%;
+  height: 30vh;
+  background-color: #1a1a1a;
+  padding: 2rem 3rem;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+}
+
+footer .footer-grid .newsletter, .connect{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+footer span{
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.newsletter input{
+  padding: 0.5rem 0.4rem;
+  width: 14.2rem;
+  background-color: var(--gray);
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.newsletter input:hover{
+  background-color: var(--light-gray);
+}
+
+.newsletter .news-btn{
+  color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  margin: 0.5rem 0rem;
+  transition: 0.5s ease;
+  width: 15rem;
+  padding: 0.2rem 0;
+}
+
+.news-btn:hover{
+  color: black;
+  background-color: var(--light-gray);
+}
+
+footer .social-items{
+  padding-top: 1rem;
+}
+
+footer .social-items a{
+  color: var(--light-gray);
+}
+
+.copyright{
+  text-align: center;
+}
+/* -----------x----------- Footer -----------x---------- */
+/* -----------x----------- Footer -----------x---------- */
+
+.body{
+  background-color: var(--yellow);
+}
+
+.project-area{
+  width: 65%;
+  min-height: 95vh;
+  height: auto;
+  margin: 0rem auto;
+  background-color: white;
+}
+
+.project-padding{
+  margin: 0rem 2rem;
+}
+
+.heading{
+  margin: 0 auto 0 30%;
+}
+
+.align-left{
+  text-align: left;
+}
+
+/* -----------x----------- Project -----------x---------- */
+
+
+/* ----------------------- Media Queries ---------------------- */
+
+@media only screen and (max-width:1320px) and (min-width: 1200px) {
+  nav{
+    margin: 0rem 10rem 0rem 7rem;
+  }
+}
+
+@media only screen and (max-width:1200px) and (min-width: 920px) {
+  nav{
+    margin: 0rem 1rem;
+  }
+  nav .nav-items .nav-links{
+    padding: 0.9rem 0.5rem;
+  }
+}
+
+
+@media only screen and (max-width:920px) and (min-width: 680px){
+  nav{
+    padding: 0rem 0.5rem;
+    margin: 0rem 5rem;
+  }
+  nav .nav-bar, .nav-items{
+    display: flex;
+    flex-direction: column;
+  }
+  nav .toggle-collapse{
+    display: initial;
+  }
+}
+
+
+@media only screen and (max-width:680px){
+  nav{
+    margin: 0rem 0.5rem;
+    padding: 0rem 1rem;
+  }
+}
+
+/* -----------x----------- Media Queries -----------x---------- */
