@@ -76,9 +76,22 @@ html,body{
   color: white;
 }
 
-.red{
-  color: red;
+.black{
+  color: black;
 }
+
+.red{
+  color: var(--red);
+}
+
+.background-red{
+  background-color: var(--red);
+}
+
+.background-orange{
+  background-color: var(--orange);
+}
+
 /* --x- colors --x-- */
 
 .btn{
@@ -154,20 +167,8 @@ html,body{
 
 /* ----- colors ----- */
 
-.red{
-  color: var(--red);
-}
 
 /* --x-- colors --x-- */
-
-/* ---- img size ----- */
-
-.p300x300{
-  width: 300px;
-  height: 300px;
-}
-
-/* --x-- img size --x-- */
 
 h1{
   margin: 0px;
@@ -201,8 +202,8 @@ p{
 
 img{
   display: block;
-  width: 100%;
-  height: auto;
+  width: 350px;
+  height: 250px;
 }
 
 hr.new{
@@ -235,6 +236,8 @@ nav .nav-bar .nav-brand a{
   color: var(--red);
   display: block;
 }
+
+/* --------- nav search-bar ---------*/
 
 nav .search-bar{
   border: 2px solid var(--red);
@@ -275,86 +278,51 @@ nav .search-bar{
   opacity: 100%;
 }
 
+/* ----x---- nav search-bar ----x----*/
 
-main .home-section{
+.home-section{
   height: 100%;
   display: flex;
   justify-content: center;
 }
-
-main .home-section .home-title{
+.home-title{
   padding: 8rem 0;
 }
 
-main .home-title .btn{
+.home-title .btn{
   width: 40%;
-  margin: 8rem auto 2rem auto;
+  margin: 8rem auto 0 auto;
   display: flex;
   justify-content: center;
+  transition: 0.4s ease;
 }
 
-/* -------x------- Home Title Page -------x---------*/
-
-/* -------------------- Project Section ---------------- */
-
-main .project-section{
-  margin: 5rem 0rem;
-  padding: 1rem 15rem;
-  /* background-color: var(--light-gray); */
+.home-title .btn:hover{
+  background-color: rgba(209, 10, 67,0.2);
+  color: var(--orange);
 }
 
+/* ------x------ Home Title Page -------x--------*/
 
-main .project-section h3{
-  display: flex;
-  justify-content: center;
+/* --------------- Project Section ------------- */
+
+.project-section{
+  width: 100%;
 }
 
-main .project-section .project-category{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.container{
+  margin: 8rem 12rem;
+  padding: 1rem 0;
 }
 
-main .project-section .project-category .btn{
-  margin: 0rem 2rem;
-  margin-bottom: 0.5rem;
-  padding: 0 0.5rem;
-  font-size: 1.1rem;
+.project-section ul li{
+  margin: 1rem;
 }
 
-main .project-section .container{
-  display: flex;
-  justify-content: center;
-}
-
-
-main .project-section .container span{
-  width: 30%;
-  height: auto;
-  padding: 1rem;
-  position: relative;
-}
-
-main .project-section .container .project-name p{
-  color: var(--yellow);
-}
-
-main .project-section .container .project-name{
-  position: absolute;
-  top: 0%;
-  margin-left: 5%;
-}
-
-main .project-section .container .project-lang{
-  position: absolute;
-  bottom: 5%;
-  right: 10%;
-  color: white;
-}
 
 /* --------- Overlay ---------*/
 
-main .project-section .container .overlay{
+.project-section .container .overlay{
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -366,25 +334,21 @@ main .project-section .container .overlay{
   transition: 0.5s ease;
 }
 
-main .overlay-container{
+.overlay-container{
   position: relative;
   width: 100%;
 }
 
-main .overlay-container:hover .overlay{
+.overlay-container:hover .overlay{
   bottom: 0;
   height: 100%;
 }
 
-main .overlay-container:hover  .project-name{
-  display: none;
+.overlay-container:hover img{
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
 }
 
-main .overlay-container:hover  .project-lang{
-  display: none;
-}
-
-main .container .text{
+.container .text{
   color: var(--parrot);
   position: absolute;
   top: 50%;
@@ -395,91 +359,7 @@ main .container .text{
 
 /* ----x---- Overlay ----x----*/
 
-/* ---------x---------- Project Section --------x------- */
-
-/* -------------------- Blog Section ---------------- */
-
-main .blog-section{
-  height: auto;
-  margin-top: 5rem;
-  padding: 1rem 15rem;
-  padding-bottom: 5rem;
-  /* background-color: var(--light-gray); */
-}
-
-main .blog-section h3{
-  display: flex;
-  justify-content: center;
-}
-
-main .blog-section .blog-category{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-main .blog-section .blog-category .btn{
-  margin: 0rem 2rem;
-  margin-bottom: 0.5rem;
-  padding: 0 0.5rem;
-  font-size: 1.1rem;
-}
-
-main .blog-section .container ul{
-  display: flex;
-  justify-content: center;
-}
-
-main .blog-section .container li{
-  max-width: 30%;
-  height: auto;
-  padding: 1rem;
-  position: relative;
-}
-
-main .blog-section .container .blog-name p{
-  color: var(--yellow);
-}
-
-main .blog-section .container .blog-name{
-  position: absolute;
-  top: 0%;
-  margin-left: 5%;
-}
-
-main .blog-section .container .blog-lang{
-  position: absolute;
-  bottom: 5%;
-  right: 10%;
-  color: white;
-}
-
-main .blog-section .container .overlay{
-  overflow: hidden;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  position: absolute;
-  background-color: var(--text-gray);
-  opacity: 0;
-  transition: 0.7s ease;
-}
-
-main .blog-section .overlay-container:hover .overlay{
-  opacity: 0.8;
-}
-
-main .blog-section .overlay-container:hover .blog-name{
-  display: none;
-}
-
-main .blog-section .overlay-container:hover .blog-lang{
-  display: none;
-}
-/* --------x------- Blog Section -----x------- */
+/* -------x-------- Project Section -------x------ */
 
 /* ---------x---------- Main Section --------x---------- */
 
@@ -497,7 +377,7 @@ footer{
   grid-template-columns: 10% 40% 40% 10%;
 }
 
-footer .footer-grid .newsletter, .connect{
+.newsletter, .connect{
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
@@ -521,7 +401,7 @@ footer span{
   background-color: var(--light-gray);
 }
 
-.newsletter .news-btn{
+.news-btn{
   color: var(--light-gray);
   border: 1px solid var(--light-gray);
   margin: 0.5rem 0rem;
@@ -535,11 +415,11 @@ footer span{
   background-color: var(--light-gray);
 }
 
-footer .social-items{
+.social-items{
   padding-top: 1rem;
 }
 
-footer .social-items a{
+.social-items a{
   color: var(--light-gray);
 }
 
@@ -547,34 +427,6 @@ footer .social-items a{
   text-align: center;
 }
 /* -----------x----------- Footer -----------x---------- */
-/* -----------x----------- Footer -----------x---------- */
-
-.body{
-  background-color: var(--yellow);
-}
-
-.project-area{
-  width: 65%;
-  min-height: 95%;
-  height: auto;
-  margin: 0rem auto;
-  background-color: white;
-}
-
-.project-padding{
-  margin: 0rem 2rem;
-}
-
-.heading{
-  margin: 0 auto 0 30%;
-}
-
-.align-left{
-  text-align: left;
-}
-
-/* -----------x----------- Project -----------x---------- */
-
 
 /* ----------------------- Media Queries ---------------------- */
 
