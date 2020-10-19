@@ -202,8 +202,9 @@ p{
 
 img{
   display: block;
-  width: 350px;
-  height: 250px;
+  margin: 2rem;
+  max-width: 350px;
+  max-height: 200px;
 }
 
 hr.new{
@@ -312,52 +313,34 @@ nav .search-bar{
 
 .container{
   margin: 8rem 12rem;
-  padding: 1rem 0;
+  background-color: red;
+}
+
+ul{
+  background-color: var(--yellow);
+  margin: auto;
 }
 
 .project-section ul li{
   margin: 1rem;
+  max-width: 400px;
 }
 
-
-/* --------- Overlay ---------*/
-
-.project-section .container .overlay{
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: rgba(63, 73, 84, 0.8);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: 0.5s ease;
+.articles{
+  width: 450px;
+  height: 300px;
+  margin: 1rem;
+  border: 1px solid var(--orange);
 }
 
-.overlay-container{
-  position: relative;
-  width: 100%;
+.article-img{
+  width: 450px;
+  height: 200px;
 }
 
-.overlay-container:hover .overlay{
-  bottom: 0;
-  height: 100%;
-}
-
-.overlay-container:hover img{
-  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
-}
-
-.container .text{
-  color: var(--parrot);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.articles span{
   text-align: center;
 }
-
-/* ----x---- Overlay ----x----*/
 
 /* -------x-------- Project Section -------x------ */
 
