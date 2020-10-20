@@ -173,7 +173,17 @@ html,body{
 
 /* --x-- font-weight --x-- */
 
+#family-fjalla{
+  font-family: var(--fjalla);
+}
 
+#type-circle{
+  list-style-type: square;
+}
+
+#type-disc{
+  list-style-type: disc;
+}
 
 h1{
   margin: 0px;
@@ -348,6 +358,45 @@ article{
 /* -------x-------- Project Section -------x------ */
 
 /* ---------x---------- Main Section --------x---------- */
+
+/* -------------------- Article Page ------------------- */
+
+main{
+  width: 100%;
+  height: auto;
+}
+
+.article-page{
+  margin: 2% 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.article-page h3{
+  color: var(--red);
+
+}
+
+.article-page ul{
+  color: white;
+  line-height: 1.7rem;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.article-page a{
+  color: white;
+  text-decoration: underline;
+}
+
+.article-page button{
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 0.4rem;
+}
+
+/* ---------x---------- Article Page --------x---------- */
 
 /* ----------------------- Footer ---------------------- */
 
