@@ -84,6 +84,14 @@ html,body{
   color: var(--red);
 }
 
+.yellow{
+  color: var(--yellow);
+}
+
+.parrot{
+  color: var(--parrot);
+}
+
 .background-red{
   background-color: var(--red);
 }
@@ -165,10 +173,7 @@ html,body{
 
 /* --x-- font-weight --x-- */
 
-/* ----- colors ----- */
 
-
-/* --x-- colors --x-- */
 
 h1{
   margin: 0px;
@@ -311,26 +316,19 @@ nav .search-bar{
   width: 100%;
 }
 
+article{
+  padding: 3rem;
+}
+
 .container{
-  margin: 8rem 12rem;
-  background-color: red;
-}
-
-ul{
-  background-color: var(--yellow);
-  margin: auto;
-}
-
-.project-section ul li{
-  margin: 1rem;
-  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 .articles{
-  width: 450px;
-  height: 300px;
-  margin: 1rem;
-  border: 1px solid var(--orange);
+  width: 400px;
+  height: 270px;
+  margin: 1rem auto;
 }
 
 .article-img{
@@ -340,6 +338,12 @@ ul{
 
 .articles span{
   text-align: center;
+  color: rgba(255,255,255,0.8);
+  transition: 0.4s ease;
+}
+
+.articles span:hover{
+  opacity: 0.5;
 }
 
 /* -------x-------- Project Section -------x------ */
