@@ -220,10 +220,10 @@ hr.new{
 /* ----------------- Nav Bar ----------------- */
 
 nav{
-  padding: 0 3rem;
+  padding: 0 5%;
   height: 0rem;
   min-height: 10vh;
-  margin: 0rem 15rem 0rem 12rem;
+  margin: 0rem 8% 0rem 6%;
   overflow: hidden;
 }
 
@@ -242,7 +242,6 @@ nav .nav-bar .nav-brand a{
   color: var(--red);
   display: block;
 }
-
 /* --------- nav search-bar ---------*/
 
 nav .search-bar{
